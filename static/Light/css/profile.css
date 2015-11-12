@@ -1,0 +1,131 @@
+ .profile-inner {
+  position: relative;
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.profile-inner:before,
+.profile-inner:after {
+  z-index: 1;
+  content: '';
+  top: -20px;
+  right: 10px;
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+.profile-block {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eceff2;
+}
+.profile-block:last-child {
+  border-bottom: none;
+}
+.base-info #avatar {
+  display: block;
+  margin: 10px auto 20px;
+  width: 128px;
+  height: 128px;
+}
+.base-info #name,
+.base-info #title,
+.base-info #location {
+  display: block;
+  text-align: center;
+}
+.base-info #name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.base-info #location {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #9a9ea3;
+}
+.base-info #location .fa {
+  margin-right: 5px;
+}
+.article-info {
+  padding: 0px;
+}
+.article-info:before,
+.article-info:after {
+  content: "";
+  display: table;
+}
+.article-info:after {
+  clear: both;
+}
+.article-info .article-info-block {
+  width: 50%;
+  float: left;
+  padding: 20px 15px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.article-info .article-info-block span {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.article-info .article-info-block:first-child {
+  border-right: 1px solid #eceff2;
+}
+.contact-info .contact-list {
+  width: 100%;
+}
+.contact-info .contact-list td {
+  text-align: center;
+  font-size: 24px;
+}
+.contact-info .contact-list td a {
+  position: relative;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #898d92;
+}
+.contact-info .contact-list td a:hover {
+  color: #565a5f;
+}
+.contact-info .contact-list td a:hover:after {
+  right: -50%;
+  top: -41px;
+  color: #fff;
+  background: #333;
+  font-size: 14px;
+  content: attr(title);
+  display: block;
+  padding: 5px 15px;
+  position: absolute;
+  white-space: nowrap;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.contact-info .contact-list td a:hover:before {
+  top: -12px;
+  right: 8px;
+  border: solid;
+  border-color: #333 transparent;
+  border-width: 5px 5px 0 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+{
+  top: 50px;
+  right: 20px;
+  z-index: 999;
+  display: block;
+  min-width: 280px;
+  position: absolute;
+}
